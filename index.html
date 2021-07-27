@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather | San Jose</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h1>Dojo Weather</h1>
+        <h3 onclick="alert('Loading weather report...')">Burbank</h3>
+        <h3 onclick="alert('Loading weather report...')">Chicago</h3>
+        <h3 onclick="alert('Loading weather report...')">Dallas</h3>
+    </nav>
+    <div class="main">
+        <div class="row-1">
+            <h1>San Jose</h1>
+            <label for="temp" id="labeltemp">show temperature in <select onchange="convert()" name="temp" id="temp">
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select></label>
+        </div>
+        <div class="bar"></div>
+        <div class="row-2">
+            <div class="greyContainer">
+                <h2>Today</h2>
+                <img src="assets/some_rain.png">
+                <p>some rain</p>
+                <div class="bot">
+                    <h3 id="red1"><span>24</span>°</h3>
+                    <h3 id="blue1"><span>18</span>°</h3>
+                </div>
+            </div>
+            <div class="greyContainer">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_sun.png">
+                <p>some sun</p>
+                <div class="bot">
+                    <h3 id="red2"><span>27</span>°</h3>
+                    <h3 id="blue2"><span>19</span>°</h3>
+                </div>
+            </div>
+            <div class="greyContainer">
+                <h2>Friday</h2>
+                <img src="assets/some_clouds.png">
+                <p>some clouds</p>
+                <div class="bot">
+                    <h3 id="red3"><span>21</span>°</h3>
+                    <h3 id="blue3"><span>16</span>°</h3>
+                </div>
+            </div>
+            <div class="greyContainer">
+                <h2>Saturday</h2>
+                <img src="assets/some_sun.png">
+                <p>some sun</p>
+                <div class="bot">
+                    <h3 id="red4"><span>26</span>°</h3>
+                    <h3 id="blue4"><span>21</span>°</h3>
+                </div>
+            </div>
+        </div>
+        <div class="cookie">
+            <img src="assets/cookie.png">
+            <div class="col-4">
+                <h2>Stop! Cookie time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic. <a href="#">Read More...</a></p>
+            </div>
+            <div class="col-5">
+                <button onclick="removeCookie()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
